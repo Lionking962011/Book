@@ -1,0 +1,74 @@
+<html>
+<head>
+    <style>
+        #bookType
+        {
+            padding: 15px;
+            margin-left: 15px;
+        }
+        #age
+        {
+            padding: 15px;
+            margin-left: 15px;   
+        }
+        label{
+            margin-left: 5px;
+        }
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link href="https://cdnjs.cloudflare./ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <script src="./book.js"></script>
+</head>
+<body>
+    <nav class="navbar-inverse" style="position:sticky;top: 0;z-index: 99999;">
+        <div class="nav-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar"><span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+        </div>
+
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li><a href="lookingbookpage.html"> Home </a></li>
+                <li id="hover"><a href="search.html"> Search </a></li>
+                <li><a href="https://lionking962011.github.io/Saache.git.io/#welcome"> About Me </a></li>
+                <li><a href="https://lionking962011.github.io/Saache.git.io/#contact">Contact Us</a></li>
+
+            </ul>
+
+        </div>
+    </nav>
+<br>
+<br>
+<center>
+    <h1>Select Your Book Type</h1>
+<label>Type Of Books:-</label>
+    <select id="bookType">
+        <option value="Horror">Horror</option>
+        <option value="Fantasy">Fantasy</option>
+        <option value="My">Mystrey</option>
+    </select>
+ 
+    <label>Age Of Child:-</label>
+    <select id="age">
+        <option value="5">5-6yrs</option>
+        <option value="7">7-8yrs</option>
+        <option value="9">9-10yrs</option>
+        <option value="11">11-12yrs</option>
+    </select>    
+<br>
+<br>
+    <button id="search" onclick="searchj()" class="btn btn-danger" style="width: 500px;">Find A Book</button>
+</center> 
+<script SameSite="None; Secure" src="https://static.landbot.io/landbot-3/landbot-3.0.0.js"></script>
+<script>
+  var myLandbot = new Landbot.Popup({
+    configUrl: 'https://chats.landbot.io/v3/H-972883-KPRASKB0NS7GH8ZN/index.json',
+  });
+</script>   
+</body>
+
+
+</html>

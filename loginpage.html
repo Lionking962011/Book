@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!-- Coding By CodingNepal - youtube.com/codingnepal -->
+<html lang="en">
+<head>
+    <title>Login</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="login.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+<script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=lFG3mNTL4f4qQ4h7BdMfjG3hmzZrTOMmzAlXh7Hj-tttgG_pArbrIVD6Ubd5IrFekHLnvu_1JPFzwTuZCf4vZ2SB876V_0kh8yiO8WkbQYc" charset="UTF-8"></script></head>
+<body>
+  <div class="wrapper">
+    <header>Login Form</header>
+    <form action="#">
+      <div class="field password">
+        <div class="input-area">
+          <input type="text" id="name1" placeholder="Name">
+          <i class="icon fas fa-lock"></i>
+          <i class="error error-icon fas fa-exclamation-circle"></i>
+        </div>
+        <div class="error error-txt">Name can't be blank</div>
+      </div>
+      <div class="field email">
+        <div class="input-area">
+          <input type="text" placeholder="City">
+          <i class="icon fas fa-envelope"></i>
+          <i class="error error-icon fas fa-exclamation-circle"></i>
+        </div>
+        <div class="error error-txt">City can't be blank</div>
+      </div>
+      <div class="field email">
+        <div class="input-area">
+          <input type="number" placeholder="Phone No.">
+          <i class="icon fas fa-envelope"></i>
+          <i class="error error-icon fas fa-exclamation-circle"></i>
+        </div>
+        <div class="error error-txt">Phone No. can't be blank</div>
+      </div>
+      <div class="field email">
+        <div class="input-area">
+          <input type="text" placeholder="Email Address">
+          <i class="icon fas fa-envelope"></i>
+          <i class="error error-icon fas fa-exclamation-circle"></i>
+        </div>
+        <div class="error error-txt">Email can't be blank</div>
+      </div>
+<button id="su" onclick="upload()"><a href="lookingbookpage.html">Login</a></button>
+    </form>
+
+    </div>
+    <script>
+function upload()
+{
+    var name = document.getElementById("name1").value;
+    localStorage.setItem("Name",name);
+}
+    </script>
+    </body>
+    </html>
